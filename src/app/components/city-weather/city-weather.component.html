@@ -1,0 +1,18 @@
+<!-- <app-weather-item
+    *ngFor="let weather of weathers"
+    [weather]="weather"
+    [weatherIcon]="weatherIcon"
+    (onDeleteWeather)="deleteWeather(weather)"
+    (onAddWeather)="addWeather(weather)"
+></app-weather-item> -->
+<div class="container">
+<app-weather-item
+    class="item"
+    *ngFor="let weather of weathers"
+    [weather]="weather"
+    [weatherIcon]="weatherIcon"
+    (onDeleteWeather)="deleteWeather(weather)"
+    (onAddWeather)="addWeather(weather)">
+>  
+</app-weather-item>
+</div>

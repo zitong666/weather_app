@@ -1,0 +1,70 @@
+.example-form {
+    /* min-width: 150px;
+    max-width: 500px;
+    width: 100%; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .example-full-width { */
+    /* width: 100%; */
+    /* display: inline-block;
+    position: relative; */
+    /* min-width: 150px;
+    max-width: 500px; */
+    /* width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+/* } */
+
+
+/* .mat-autocomplete-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000; 
+  } */
+/* .mat-autocomplete-panel {
+    position: absolute ;
+    top: 100% ;
+    left: 0 ;
+  } */
+
+.hint {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button {
+    background-color: rgb(72, 180, 184);
+    /* justify-content: center;
+    align-content: center; */
+    color:aliceblue;
+    /* padding: 5px 10px; */
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.location-button {
+    background-color: rgb(72, 180, 184);
+    justify-content: center;
+    align-content: center;
+    color:aliceblue;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 20;
+}
+
+.same-height {
+    height: 30px; /* Adjust the height value as needed */
+}

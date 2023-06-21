@@ -1,0 +1,52 @@
+<p class="hint">How's the weather in...</p> 
+<form class="example-form">
+    <button class="location-button">
+        <fa-icon [icon]="locationDotIcon"></fa-icon>
+    </button>
+  	<mat-form-field class="example-full-width">
+        <!-- <mat-label>Select one city</mat-label> -->
+        <input 
+            class="same-height"
+            type="text"
+            name="cityName"
+
+            aria-label="Input"
+            matInput
+            [formControl]="cityName"
+            [matAutocomplete]="auto"
+            [(ngModel)]="newCity"
+            #mainMenuTrigger="matMenuTrigger"
+            [matMenuTriggerFor]="idForThisDropDown"
+        />
+        <mat-menu 
+            #auto="matAutocomplete"
+            (optionSelected)="onOptionSelected($event)"
+        >
+            <mat-option
+              #idForThisDropDown="matMenu"
+              *ngFor="let city of filteredCities | async"
+              [value]="city"
+            >
+              {{city}}
+            </mat-option>
+        </mat-menu>
+
+
+        <mat-autocomplete 
+            #auto="matAutocomplete"
+            (optionSelected)="onOptionSelected($event)"
+        >
+            <mat-option *ngFor="let city of filteredCities | async" [value]="city">
+              {{city}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+    <button 
+        class="add-button"
+        (click)="onAdd()"
+    >+</button>
+</form>
+
+<!-- placeholder="Pick one city" -->
+<!--  -->
+<!-- (input)="onInput(myInput.value)" -->

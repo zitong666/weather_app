@@ -1,0 +1,25 @@
+import { Weather } from "./Weather"
+
+export const WEATHERS: Weather[] = [
+    {
+        id: 1,
+        city: 'Lisbon',
+        country: 'Portugal',
+        temperature: 31,
+        weatherIcon: '.png' 
+    },
+    {
+        id: 2,
+        city: 'Stockholm',
+        country: 'Sweden',
+        temperature: 6,
+        weatherIcon: '.png'
+    },
+    {
+        id: 3,
+        city: 'Toronto',
+        country: 'Canada',
+        temperature: 16,
+        weatherIcon: '.png'
+    }
+]

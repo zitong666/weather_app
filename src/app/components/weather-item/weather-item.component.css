@@ -1,0 +1,33 @@
+.city-weather {
+    position: relative;
+    display: flex;
+    /* grid-template-columns: auto 1fr;  */
+    align-items: center;
+    /* gap: 10px */
+}
+.img {
+    flex-shrink: 0;
+    margin-right: 10px;
+    /* Additional styling for the image */
+}
+  
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* right: 20px; */
+    /* flex: 0 0 100%; */
+    /* Additional styling for the content */
+}
+
+.text {
+    /* margin-bottom: 5px; */
+    color: white;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

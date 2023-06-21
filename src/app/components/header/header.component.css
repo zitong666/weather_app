@@ -1,0 +1,17 @@
+.picture-container {
+  text-align: center; 
+}
+    
+.picture-container img {
+  width: 221px; 
+  height: 91.7px; 
+  display: block; 
+}
+    
+.picture-container hr {
+  display: block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-top: 10px solid rgb(72, 180, 184);
+}

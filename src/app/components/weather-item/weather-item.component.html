@@ -1,0 +1,52 @@
+<!-- <div
+    class="city-weather"
+    [ngStyle]="{'background-color': getRamdomColor()}">
+    <div class="weather">
+        <h3>
+            <img src="{{weather.weatherIcon}}" alt="pic">
+            <fa-icon 
+                [ngStyle]="{color: 'rgb(72, 180, 184)'}"
+                [icon]="faTimes"
+                (click)="onDelete(weather)">
+            </fa-icon></h3>
+        <h3>{{ weather.temperature}} &deg;C</h3>
+    </div>
+    <div class="location">
+        <span>{{ weather.city }}， {{ weather.country}}</span>
+    </div>  
+</div> -->
+
+<!-- <div
+    class="city-weather"
+    [ngStyle]="{'background-color': getRamdomColor()}">
+    <img src="{{weather.weatherIcon}}" alt="pic">
+    <div class="content">
+        <span>{{ weather.temperature}} &deg;C</span>
+        <span>{{ weather.city }}， {{ weather.country}}</span>
+        <fa-icon 
+            [ngStyle]="{color: 'rgb(72, 180, 184)'}"
+            [icon]="faTimes"
+            (click)="onDelete(weather)">
+        </fa-icon>
+    </div>
+</div> -->
+<div
+    class="city-weather"
+    [ngStyle]="{'background-color': getRamdomColor()}">
+    <img src="{{weather.weatherIcon}}" alt="pic" [ngStyle]="{'background-color': getRamdomColor()}">
+    <div class="text-container">
+        <span class="text">{{ weather.temperature}} &deg;C</span>
+        <span class="text">{{ weather.city }}， {{ weather.country}}</span>   
+    </div>
+    <fa-icon 
+        class="icon"
+        [ngStyle]="{color: 'rgb(72, 180, 184)'}"
+        [icon]="faTimes"
+        (click)="onDelete(weather)">
+    </fa-icon>
+    <!-- <fa-icon 
+        [ngStyle]="{color: 'rgb(72, 180, 184)'}"
+        [icon]="faSyncAlt"
+        (click)="onRefresh(weather.city)">
+    </fa-icon> -->
+</div>

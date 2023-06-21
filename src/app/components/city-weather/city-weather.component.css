@@ -1,0 +1,18 @@
+/* .app-weather-item {
+    display: flex;
+} */
+/* border: 1px solid #ccc;  */
+.container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto; /* Add scrollbars if necessary */
+    
+    padding: 10px; /* Optional padding */
+}
+.item {
+    flex: 0 0 auto;
+    margin-right: 15px;
+    width: 250px; 
+    height: 100px; 
+}
