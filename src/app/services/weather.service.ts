@@ -16,7 +16,7 @@ export class WeatherService {
   }
 
   getWeatherData(cityName: string): Observable<WeatherData> {
-    return this.http.get<WeatherData>('http://api.weatherstack.com/current?access_key=9a02ab51b096e7be86fbff3e4899b333&query=' + cityName)
+    return this.http.get<WeatherData>('http://api.weatherstack.com/current?access_key=********&query=' + cityName)
   }
 
   
